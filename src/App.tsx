@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import will from "./images/bestPictureOfWill.jpeg"
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>Kano Haruna</h1>
+      <ul className="menu">
+        <li>About Me</li>
+        <li>Blog</li>
+        <li>Delieverable</li>
+        <li>Qiita</li>
+        <li>GitHub</li>
+      </ul>
+    <img className='topPhoto' src={will} alt="dog"/>
+    
     </div>
   );
 }
