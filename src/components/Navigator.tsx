@@ -1,17 +1,14 @@
-import React from 'react';
-import will from "./images/bestPictureOfWill.jpeg";
-import "./App.css"
-import Navigator from './components/Navigator';
+import React from 'react'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
-function App() {
+function Navigator() {
   return (
     <div>
-       <h1>Kano Haruna</h1>
-      <Navigator/>
-      <img className="topPhoto" src={will} alt="dog" />
-    {/* <BrowserRouter>
-      <Route path="/" element={<App/>}/>
+            <BrowserRouter>
+    <Routes>
+      <Route path="/"/>
       <Route path="https://github.com/primarina730" />
+    </Routes>
 
     <div className="App">
       <Link to="/" className='list'>Home</Link>
@@ -20,9 +17,9 @@ function App() {
       <Link to="" className='list'>Deliverable</Link>
       <Link to="" className="list">Skill</Link>
     </div>
-    </BrowserRouter> */}
+    </BrowserRouter>
     </div>
-  );
-  }
+  )
+}
 
-export default App;
+export default Navigator
