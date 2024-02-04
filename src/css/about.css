@@ -11,6 +11,9 @@
 .photo_introductions .myphotos .myphoto_elm {
   width: 50vh;
 }
+.photo_introductions .myintroductions p {
+  word-break: break-word;
+}
 
 .experienced-langs {
   padding-top: 5%;
