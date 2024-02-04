@@ -1,0 +1,22 @@
+.App {
+  width: 100%;
+}
+
+.header-component {
+  width: 100%;
+}
+.header-component .page-title {
+  width: 100%;
+  text-align: center;
+}
+.header-component .header-navigation {
+  width: 60%;
+  margin: 0 auto;
+}
+.header-component .header-navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header-component .header-navigation ul li {
+  white-space: nowrap;
+}/*# sourceMappingURL=header.css.map */
