@@ -27,19 +27,39 @@
   width: 100px;
   height: 100px;
 }
+
 @media screen and (max-width: 768px) {
-  .experienced-langs .photo_introductions {
+  .photo_introductions {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .experienced-langs .photo_introductions .myphotos .myphoto_elm {
+  .photo_introductions .myphotos {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .photo_introductions .myphotos .myphoto_elm {
     width: 20vh;
   }
-  .experienced-langs .experienced-langs {
+  .photo_introductions .myintroductions {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .photo_introductions .myintroductions li, .photo_introductions .myintroductions p {
+    font-size: 0.7rem;
+  }
+  .experienced-langs {
     width: 80%;
   }
-  .experienced-langs .experienced-langs .skills .lang-logo {
-    width: 80px;
-    height: 80px;
+  .experienced-langs h3 {
+    font-size: 1rem;
+  }
+  .experienced-langs .skills .skill_lang_level .logos__container .lang-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .experienced-langs .skills .skill-levels__container svg {
+    width: 50px !important;
   }
 }/*# sourceMappingURL=about.css.map */

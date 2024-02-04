@@ -19,3 +19,24 @@
     }
   }
 }
+
+@media screen and (max-width:768px) {
+  .header-component{
+    .page-title{
+      font-size: 1.5rem;
+    }
+    .header-navigation{
+      text-align: center;
+      gap: 5%;
+      ul{
+        display: flex;
+        flex-direction: column;
+        li{
+          a{
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

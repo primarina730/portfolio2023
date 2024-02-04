@@ -17,16 +17,24 @@ function Header() {
         <div className="header-navigation">
           <ul>
             <li>
-              <a href="https://github.com/primarina730">GitHub</a>
+              <a href="https://github.com/primarina730" class="github">
+                GitHub
+              </a>
             </li>
             <li>
-              <a href="deliverables">Deliverables</a>
+              <a href="deliverables" class="deliverables">
+                Deliverables
+              </a>
             </li>
             <li>
-              <a href="10-things">10&nbsp;Things</a>
+              <a href="10-things" class="ten-things">
+                10&nbsp;Things
+              </a>
             </li>
             <li>
-              <a href="about">About Me</a>
+              <a href="about" class="about-me">
+                About Me
+              </a>
             </li>
           </ul>
         </div>

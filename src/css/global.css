@@ -3,8 +3,13 @@ html {
   padding-bottom: 5vw;
 }
 
+.eachpages__title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 body {
-  width: 100%;
+  margin: 0;
 }
 
 ul, li {
@@ -24,6 +29,18 @@ h4,
 p,
 li,
 a {
-  font-family: serif;
   color: black;
+  font-family: serif;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    width: 100vw;
+  }
+  .eachpages__title {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=global.css.map */

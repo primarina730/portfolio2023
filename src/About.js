@@ -18,7 +18,7 @@ function About() {
 
   return (
     <div>
-      <h2 className="about-me__title">About me</h2>
+      <h2 className="eachpages__title">About me</h2>
       <div className="photo_introductions">
         <div className="myphotos">
           <img

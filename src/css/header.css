@@ -19,4 +19,21 @@
 }
 .header-component .header-navigation ul li {
   white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .header-component .page-title {
+    font-size: 1.5rem;
+  }
+  .header-component .header-navigation {
+    text-align: center;
+    gap: 5%;
+  }
+  .header-component .header-navigation ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-component .header-navigation ul li a {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=header.css.map */
