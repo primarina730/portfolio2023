@@ -1,20 +1,31 @@
-$letters-color:black;
-
-body{
-    width: 100%;
+$letters-color: black;
+html{
+  width: 100vw;
+  padding-bottom: 5vw;
 }
 
-ul{
-    padding-left: 0;
-    margin-left: 0;
-    list-style: none;
+body {
+  width: 100%;
 }
 
-a{
-    text-decoration:none;
+ul ,li{
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
 }
 
-h1,h2,h3,h4,p,li,a{
-    font-family:serif;
-    color: $letters-color;
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a {
+  font-family: serif;
+  color: $letters-color;
 }

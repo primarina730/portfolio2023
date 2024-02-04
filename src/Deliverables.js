@@ -20,32 +20,38 @@ function Deliverables() {
     <div className="deliverables-container">
       {deliverables.map((deliverable) => (
         <div key={deliverable.id} className="each-deliverables">
-          <h2 className="deliverable-title">
-            <a href={deliverable.url}>{deliverable.name}</a>
-          </h2>
-          <img
-            src={deliverable.thumbnail}
-            alt={deliverable.name}
-            className="deliverables-thumbnail"
-          />
-          <div className="deliverables-information">
-            <div className="deliverables-tools-component">
-              <h3 className="deliverables-tools">Tools</h3>
-              <ul className="deliverable-tools-ul">
-                {deliverable.tool.map((deliverabletools) => (
-                  <li key={deliverabletools}>{deliverabletools}</li>
-                ))}
-              </ul>
+          <a href={deliverable.url}>
+            <h2 className="deliverable-title">{deliverable.name}</h2>
+            <div className="deliverable__show-details">
+              <img
+                src={deliverable.thumbnail}
+                alt={deliverable.name}
+                className="deliverables-thumbnail"
+              />
+              <div className="deliverables-information">
+                <div className="deliverables__tools-type">
+                  <h3 className="deliverables-tools">Tools</h3>
+                  <ul className="deliverable-tools-ul">
+                    {deliverable.tool.map((deliverabletools) => (
+                      <li key={deliverabletools}>{deliverabletools}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className=" deliverables__details">
+                  <h3 className="deliverables-type">Type</h3>
+                  <p>{deliverable.type}</p>
+                </div>
+              </div>
             </div>
-            <div deliverables-type-component>
-              <h3 className="deliverables-type">Type</h3>
-              <p>{deliverable.type}</p>
-            </div>
-          </div>
+          </a>
         </div>
       ))}
     </div>
   );
 }
+
+// function Deliverables() {
+//   return <div>Deliverables</div>;
+// }
 
 export default Deliverables;

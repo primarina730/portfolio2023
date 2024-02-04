@@ -1,8 +1,13 @@
+html {
+  width: 100vw;
+  padding-bottom: 5vw;
+}
+
 body {
   width: 100%;
 }
 
-ul {
+ul, li {
   padding-left: 0;
   margin-left: 0;
   list-style: none;
@@ -12,7 +17,13 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, p, li, a {
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a {
   font-family: serif;
   color: black;
 }/*# sourceMappingURL=global.css.map */

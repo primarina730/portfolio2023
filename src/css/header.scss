@@ -1,21 +1,21 @@
-.App{
-    width: 100%;
+.App {
+  width: 100%;
 }
-.header-component{
+.header-component {
+  width: 100%;
+  .page-title {
     width: 100%;
-    .page-title{
-        width: 100%;
-        text-align: center;
+    text-align: center;
+  }
+  .header-navigation {
+    width: 60%;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        white-space: nowrap;
+      }
     }
-    .header-navigation{
-        width: 60%;
-        margin: 0 auto;
-        ul{
-            display: flex;
-            justify-content: space-between;
-            li{
-                white-space: nowrap;
-            }
-        }
-    }
+  }
 }

@@ -1,0 +1,45 @@
+.about-me__title {
+  text-align: center;
+}
+
+.photo_introductions {
+  width: 100vh;
+  margin: 0 auto;
+  gap: 15%;
+  display: flex;
+}
+.photo_introductions .myphotos .myphoto_elm {
+  width: 50vh;
+}
+
+.experienced-langs {
+  padding-top: 5%;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.experienced-langs .skills {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.experienced-langs .skills .lang-logo {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .experienced-langs .photo_introductions {
+    display: flex;
+    flex-direction: column;
+  }
+  .experienced-langs .photo_introductions .myphotos .myphoto_elm {
+    width: 20vh;
+  }
+  .experienced-langs .experienced-langs {
+    width: 80%;
+  }
+  .experienced-langs .experienced-langs .skills .lang-logo {
+    width: 80px;
+    height: 80px;
+  }
+}/*# sourceMappingURL=about.css.map */
