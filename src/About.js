@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { db } from "./firebase";
-import { collection, getDoc, getDocs } from "firebase/firestore";
-import Circle from "react-circle";
-
+import { collection, getDocs } from "firebase/firestore";
 import "./css/about.css";
+import CircularProgress from "@mui/joy/CircularProgress";
+
+// import CircularProgress from "@mui/material/CircularProgress";
 
 function About() {
   const [skills, setSkills] = useState([]);
@@ -24,6 +25,7 @@ function About() {
           <img
             src="https://firebasestorage.googleapis.com/v0/b/deliverable-69fe8.appspot.com/o/myphotos%2FSNOW_20220923_164510_356_Original.jpg?alt=media&token=d96739af-910b-4c73-a00a-7cba4bd4e68b"
             className="myphoto_elm"
+            alt="my selfie"
           />
         </div>
         <div className="myintroductions">
@@ -48,24 +50,8 @@ function About() {
                 <img src={skill.src} alt={skill.alt} className="lang-logo" />
               </div>
               <div className="skill-levels__container">
-                <Circle
-                  animate={true}
-                  animationDuration="1s"
-                  responsive={false}
-                  size="100"
-                  lineWidth="40"
-                  progress={skill.level}
-                  progressColor="rgb(76, 154, 255)"
-                  bgColor="#ecedf0"
-                  textColor="#6b778c"
-                  textStyle={{
-                    font: "bold 4rem Helvetica, Arial, sans-serif",
-                  }}
-                  percentSpacing={10}
-                  roundedStroke={false}
-                  showPercentage={true}
-                  showPercentageSymbol={true}
-                />
+                <CircularProgress determinate value={skill.level} size="lg" />
+                <CircularProgress determinate value={skill.level} size="sm" />
               </div>
             </div>
           ))}

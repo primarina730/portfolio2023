@@ -30,6 +30,14 @@
   width: 100px;
   height: 100px;
 }
+.experienced-langs .skills .skill-levels__container {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.experienced-langs .MuiCircularProgress-sizeSm {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .photo_introductions {
@@ -64,5 +72,11 @@
   }
   .experienced-langs .skills .skill-levels__container svg {
     width: 50px !important;
+  }
+  .experienced-langs .skills .skill-levels__container .MuiCircularProgress-sizeLg {
+    display: none;
+  }
+  .experienced-langs .skills .skill-levels__container .MuiCircularProgress-sizeSm {
+    display: block;
   }
 }/*# sourceMappingURL=about.css.map */
