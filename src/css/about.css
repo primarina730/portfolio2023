@@ -1,0 +1,82 @@
+.about-me__title {
+  text-align: center;
+}
+
+.photo_introductions {
+  width: 100vh;
+  margin: 0 auto;
+  gap: 15%;
+  display: flex;
+}
+.photo_introductions .myphotos .myphoto_elm {
+  width: 50vh;
+}
+.photo_introductions .myintroductions p {
+  word-break: break-word;
+}
+
+.experienced-langs {
+  padding-top: 5%;
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.experienced-langs .skills {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.experienced-langs .skills .lang-logo {
+  width: 100px;
+  height: 100px;
+}
+.experienced-langs .skills .skill-levels__container {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.experienced-langs .MuiCircularProgress-sizeSm {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .photo_introductions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .photo_introductions .myphotos {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .photo_introductions .myphotos .myphoto_elm {
+    width: 20vh;
+  }
+  .photo_introductions .myintroductions {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .photo_introductions .myintroductions li, .photo_introductions .myintroductions p {
+    font-size: 0.7rem;
+  }
+  .experienced-langs {
+    width: 80%;
+  }
+  .experienced-langs h3 {
+    font-size: 1rem;
+  }
+  .experienced-langs .skills .skill_lang_level .logos__container .lang-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .experienced-langs .skills .skill-levels__container svg {
+    width: 50px !important;
+  }
+  .experienced-langs .skills .skill-levels__container .MuiCircularProgress-sizeLg {
+    display: none;
+  }
+  .experienced-langs .skills .skill-levels__container .MuiCircularProgress-sizeSm {
+    display: block;
+  }
+}/*# sourceMappingURL=about.css.map */
