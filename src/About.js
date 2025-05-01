@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { db } from "./firebase";
 import { collection, getDocs } from "firebase/firestore";
 import "./css/about.css";
-import CircularProgress from "@mui/joy/CircularProgress";
+// import CircularProgress from "@mui/joy/CircularProgress";
 
 function About() {
   const [skills, setSkills] = useState([]);
@@ -43,7 +43,7 @@ function About() {
         <h3>使用経験言語</h3>
         <div className="skills">
           {skills.map((skill) => (
-            <div key={skills.id} className="skill_lang_level">
+            <div key={skill.id} className="skill_lang_level">
               <div className="logos__container">
                 <img src={skill.src} alt={skill.alt} className="lang-logo" />
               </div>
