@@ -17,22 +17,25 @@ function Header() {
         <div className="header-navigation">
           <ul>
             <li>
-              <a href="https://github.com/primarina730" class="github">
+              <a href="https://github.com/primarina730" className="github">
                 GitHub
               </a>
             </li>
             <li>
-              <a href="deliverables" class="deliverables">
+              <a href="deliverables" className="deliverables">
                 Deliverables
               </a>
             </li>
             <li>
-              <a href="https://store.piascore.com/search?c=8168" class="sheet-music">
+              <a
+                href="https://store.piascore.com/search?c=8168"
+                className="sheet-music"
+              >
                 Sheet Music
               </a>
             </li>
             <li>
-              <a href="about" class="about-me">
+              <a href="about" className="about-me">
                 About Me
               </a>
             </li>

@@ -47,10 +47,10 @@ function About() {
               <div className="logos__container">
                 <img src={skill.src} alt={skill.alt} className="lang-logo" />
               </div>
-              <div className="skill-levels__container">
+              {/* <div className="skill-levels__container">
                 <CircularProgress determinate value={skill.level} size="lg" />
                 <CircularProgress determinate value={skill.level} size="sm" />
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
