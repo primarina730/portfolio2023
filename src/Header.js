@@ -23,7 +23,9 @@ function Header() {
               <a href="deliverables">Deliverables</a>
             </li>
             <li>
-              <a href="10-things">10&nbsp;Things</a>
+              <a href="https://store.piascore.com/search?c=8168">
+                Sheet&nbsp;Music
+              </a>
             </li>
             <li>
               <a href="about">About Me</a>
@@ -34,7 +36,6 @@ function Header() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/deliverables" element={<Deliverables />} />
-        <Route path="/10things" element={<Deliverables />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
