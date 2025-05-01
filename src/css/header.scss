@@ -1,21 +1,42 @@
-.App{
-    width: 100%;
+.App {
+  width: 100%;
 }
-.header-component{
+.header-component {
+  width: 100%;
+  .page-title {
     width: 100%;
-    .page-title{
-        width: 100%;
-        text-align: center;
+    text-align: center;
+  }
+  .header-navigation {
+    width: 60%;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        white-space: nowrap;
+      }
     }
-    .header-navigation{
-        width: 60%;
-        margin: 0 auto;
-        ul{
-            display: flex;
-            justify-content: space-between;
-            li{
-                white-space: nowrap;
-            }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-component {
+    .page-title {
+      font-size: 1.5rem;
+    }
+    .header-navigation {
+      text-align: center;
+      gap: 5%;
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          a {
+            font-size: 0.8rem;
+          }
         }
+      }
     }
+  }
 }

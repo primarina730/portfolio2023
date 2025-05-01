@@ -1,8 +1,19 @@
-body {
-  width: 100%;
+html {
+  width: 100vw;
+  padding-bottom: 5vw;
 }
 
-ul {
+.eachpages__title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+ul,
+li {
   padding-left: 0;
   margin-left: 0;
   list-style: none;
@@ -12,7 +23,25 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, p, li, a {
-  font-family: serif;
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a {
   color: black;
-}/*# sourceMappingURL=global.css.map */
+  font-family: serif;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    width: 100vw;
+  }
+  .eachpages__title {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+} /*# sourceMappingURL=global.css.map */

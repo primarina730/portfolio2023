@@ -1,20 +1,48 @@
-$letters-color:black;
-
-body{
-    width: 100%;
+$letters-color: black;
+html {
+  width: 100vw;
+  padding-bottom: 5vw;
 }
 
-ul{
-    padding-left: 0;
-    margin-left: 0;
-    list-style: none;
+.eachpages__title {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-a{
-    text-decoration:none;
+body {
+  margin: 0;
 }
 
-h1,h2,h3,h4,p,li,a{
-    font-family:serif;
-    color: $letters-color;
+ul,
+li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a {
+  color: $letters-color;
+  font-family: serif;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    width: 100vw;
+  }
+  .eachpages__title {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
 }

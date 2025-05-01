@@ -12,23 +12,29 @@ function Header() {
     <div>
       <div className="header-component">
         <a href="/">
-          <h2 className="page-title">Kano Haruna</h2>
+          <h1 className="page-title">Kano Haruna</h1>
         </a>
         <div className="header-navigation">
           <ul>
             <li>
-              <a href="https://github.com/primarina730">GitHub</a>
-            </li>
-            <li>
-              <a href="deliverables">Deliverables</a>
-            </li>
-            <li>
-              <a href="https://store.piascore.com/search?c=8168">
-                Sheet&nbsp;Music
+              <a href="https://github.com/primarina730" class="github">
+                GitHub
               </a>
             </li>
             <li>
-              <a href="about">About Me</a>
+              <a href="deliverables" class="deliverables">
+                Deliverables
+              </a>
+            </li>
+            <li>
+              <a href="https://store.piascore.com/search?c=8168" class="sheet-music">
+                Sheet Music
+              </a>
+            </li>
+            <li>
+              <a href="about" class="about-me">
+                About Me
+              </a>
             </li>
           </ul>
         </div>
